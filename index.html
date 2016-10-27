@@ -9,7 +9,6 @@
 	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
 	<!-- 문서의 타이틀의 명세하는 엘리먼트 -->
 	<title>앙갤가자 - 건강한 갤질을 위하여</title>
-
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
@@ -26,8 +25,6 @@
 	DC INSIDE : <a href="http://www.dcinside.com" target="_blank">DC INSIDE 홈으로</a>
 	<p><a href="#ioi">IOI</a> Members</p> <!-- 문단을 정의하는 엘리먼트 -->
 	<p>
-
-
 		<a href="#iny_kch_ksj">임나영</a>
 		<a href="#iny_kch_ksj">김청하</a>
 		<a href="#iny_kch_ksj">김세정</a>
@@ -39,16 +36,6 @@
 		<a href="#kmn_kdy_jsm">강미나</a>
 		<a href="#kmn_kdy_jsm">김도연</a>
 		<a href="#kmn_kdy_jsm">전소미</a>
-
-		<script type="text/javascript">
-			$("a[href^='#']").click(function(event) {
-				event.preventDefault();
-				var target = $(this.hash);
-				var headerHeight = $('.area_head').height();
-				var offsetTop = target.offset().top - headerHeight;
-				$('html, body').animate({scrollTop: offsetTop}, 500);//target.offset().top}, 500);
-			});
-		</script>
 	</p>
 	<br>
 	<hr>
@@ -80,6 +67,16 @@
 		<a id="kimdoyeon_link" href="http://gall.dcinside.com/kimdoyeon" target="_blank" title="김도연 갤러리"><img src="image/member/dou.jpg" alt="도연" width="150" height="150" title="김도연 갤러리"></a>
 		<a href="http://gall.dcinside.com/jeonsomi" target="_blank" title="전소미 갤러리"><img src="image/member/somi.jpg" alt="소미" width="150" height="150" title="전소미 갤러리"></a>
 	<br>
+
+	<script type="text/javascript">
+		$("a[href^='#']").click(function(event) {
+			event.preventDefault();
+			var target = $(this.hash);
+			var headerHeight = $('.area_head').height();
+			var offsetTop = target.offset().top - headerHeight;
+			$('html, body').animate({scrollTop: offsetTop}, 500);//target.offset().top}, 500);
+		});
+	</script>
 
 	<!-- <p style="height:600px;"><hr></p> -->
 </body>
